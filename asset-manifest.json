@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mad-money-task-tracker/static/css/main.7c8d9c81.css",
+    "main.js": "/mad-money-task-tracker/static/js/main.29ccc160.js",
+    "static/js/453.d7b30717.chunk.js": "/mad-money-task-tracker/static/js/453.d7b30717.chunk.js",
+    "index.html": "/mad-money-task-tracker/index.html",
+    "main.7c8d9c81.css.map": "/mad-money-task-tracker/static/css/main.7c8d9c81.css.map",
+    "main.29ccc160.js.map": "/mad-money-task-tracker/static/js/main.29ccc160.js.map",
+    "453.d7b30717.chunk.js.map": "/mad-money-task-tracker/static/js/453.d7b30717.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7c8d9c81.css",
+    "static/js/main.29ccc160.js"
+  ]
+}
