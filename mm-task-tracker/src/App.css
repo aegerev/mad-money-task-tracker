@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #7093DB;
 }
 
 body {
@@ -13,21 +14,15 @@ code {
   font-family: Arial;
 }
 
-.app {
-  background: #209cee;
-  padding: 30px;
-  height: 100vh;
-}
-
 .todo-list{
-  background: #e8e8e8;
+  background: #FF2400;
   border-radius: 4px;
   padding: 5px;
   max-width: 400px;
 }
 
 .todo{
-  background: #fff;
+  background: #FF2400;
   box-shadow: 1px 1px 1px rgba(0,0,0, 0.15);
   padding: 3px 10px;
   font-size: 24px;
@@ -48,4 +43,3 @@ code {
   height: 2.25em;
   font-size: 24px;
 }
-
