@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import {TodoForm} from './components/form.js'
 import './App.css';
 
 function App() {
@@ -38,16 +39,9 @@ function App() {
 
   ]);
 
-  const [value, setValue] = useState('');
-  const handleSubmit = e => {
-    e.preventDefault();
-    if(!value) {
-      return;
-    }
-
-    const newTodos = [...todos, {text: value, isCompleted: false}];
+  const addTodo = text => {
+    const newTodos = [...todos, {text, isCompleted: false}];
     setTodos(newTodos);
-    setValue('');
   }
 
   const removeTodo = e => {
@@ -60,14 +54,7 @@ function App() {
     <div className="App">
       <h1> MAD Rundown </h1>
         {todos.map((todo, i) => <div className="todo" key = {i} id={i} onClick={removeTodo}> {todo.text} </div>)}
-        <form onSubmit={handleSubmit}>
-          <input type="text" 
-          className="input"
-           value={value} 
-           placeholder="Add Task" 
-           onChange={e => setValue(e.target.value)}
-          />
-        </form>
+       <TodoForm addTodo={addTodo}></TodoForm>
     </div>
   );
 }
