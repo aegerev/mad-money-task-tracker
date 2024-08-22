@@ -36,11 +36,32 @@ function App() {
         isCompleted: false,
       },
 
-  ])
+  ]);
+
+  const [value, setValue] = useState('');
+  const handleSubmit = e => {
+    e.preventDefault();
+    if(!value) {
+      return;
+    }
+
+    const newTodos = [...todos, {text: value, isCompleted: false}];
+    setTodos(newTodos);
+    setValue('');
+  }
+
   return (
     <div className="App">
       <h1> MAD Rundown </h1>
         {todos.map((todo, i) => <div className="todo" key = {i}> {todo.text} </div>)}
+        <form onSubmit={handleSubmit}>
+          <input type="text" 
+          className="input"
+           value={value} 
+           placeholder="Add Task" 
+           onChange={e => setValue(e.target.value)}
+          />
+        </form>
     </div>
   );
 }
